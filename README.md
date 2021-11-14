@@ -1,6 +1,6 @@
 # Frontend Mentor -  Countries API ([Click Here](https://countries-api-samueloliveira.vercel.app/))
 
-![Design preview for Countries API ](./Assets/design/desktop-preview.jpg)
+![Design preview for Countries API ](./src/image/desktop-preview.jpg)
 
 ## WELCOME! 👋
 
