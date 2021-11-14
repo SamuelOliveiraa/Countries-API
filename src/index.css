@@ -6,17 +6,42 @@
     text-decoration: none;
     outline: none;
 }
+input,
+input:focus{
+    border: none;
+    outline: none
+}
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
 
 /* VARIABLES */
-html,body,#root{
-    --dark-blue: hsl(209, 23%, 22%); /*  (Dark Mode Elements) */
+html{
+
+    overflow-x: hidden;
+
+  /*   --dark-blue: hsl(209, 23%, 22%); (Dark Mode Elements)  
+    --very-dark-blue: hsl(207, 26%, 17%);(Dark Mode Background) */
+
+    --white: hsl(0, 0%, 100%); /* (Dark Mode Text & Light Mode Elements); */
+    
     --very-dark-blue : hsl(200, 15%, 8%); /* (Light Mode Text) */
     --dark-gray: hsl(0, 0%, 52%);  /* (Light Mode Input) */
     --very-light-gray: hsl(0, 0%, 98%);  /* (Light Mode Background) */
-    --white: hsl(0, 0%, 100%);  /* (Dark Mode Text & Light Mode Elements) */
-    --very-dark-blue: hsl(207, 26%, 17%); /* (Dark Mode Background) */
 
     width: 100vw;
     height: 100vh;
-    
+    font-family: 'Nunito Sans', sans-serif;
+
+    /* 1rem = 16px (User Agent) = 100% (User Agent) */
+    font-size: 62.5% /* 10px */
+}
+html,body,#root{
+    background-color: var(--very-light-gray);
+}
+
+html.dark{
+    --very-dark-blue : hsl(0, 0%, 100%); 
+    --dark-gray: hsl(0, 0%, 52%); 
+    --very-light-gray: hsl(207, 26%, 17%);  
+    --white: hsl(209, 23%, 22%);
 }

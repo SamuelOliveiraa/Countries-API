@@ -1,0 +1,46 @@
+.container{
+    position: relative;
+    color: var(--very-dark-blue);
+}
+.select, .options{
+    max-width: 200px;
+    background-color: var(--white);
+    display: flex;
+    padding: 1.5rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.select h2,
+.select svg{
+    font-size: 1.4rem;
+    transition: .2s ease-in-out;
+}
+.options{
+    width: 100%;
+    max-height: 300px;
+    overflow-y: scroll;
+    position: absolute;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -100;
+    padding: 0;
+}
+.container.show .options{
+    opacity: 1;
+    visibility: visible;
+    z-index: 100;
+}
+.options p{
+    width: 100%;
+    padding: 1.5rem 2rem;
+    margin-right: auto;
+}
+.options p:hover{
+    background-color: var(--dark-gray);
+}

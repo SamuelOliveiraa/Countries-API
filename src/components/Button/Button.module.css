@@ -1,0 +1,13 @@
+.button{
+    background-color: var(--white);
+    display: block;
+    max-width: 75px;
+    padding: 0.3rem 1rem;
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.1rem;
+    color: var(--very-dark-gray);
+}

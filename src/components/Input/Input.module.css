@@ -1,0 +1,29 @@
+.input{
+    width: 100%;
+    height: 50px;   
+    background-color: var(--white);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    color: var(--very-dark-blue);
+}
+.input input{
+    background-color: var(--white);
+    width: 100%;
+    height: 100%;
+    margin-left: 1rem;
+    color: var(--very-dark-blue);
+}
+.input input::placeholder{
+    font-size: 1.6rem;
+    color: var(--very-dark-blue);
+}
+.input svg{
+    font-size: 1.7rem;
+}
+@media screen and (min-width: 600px) {
+    .input{
+        width: 380px;
+    }
+ }
