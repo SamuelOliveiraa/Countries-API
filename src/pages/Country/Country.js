@@ -10,7 +10,7 @@ function Country() {
     const [countrys, setCountrys] = useState([])
     const [all, setAll] = useState([])
 
-    let url = 'https://restcountries.com/v2/name/' + a.substr(38) 
+    let url = 'https://restcountries.com/v2/name/' + a.substr(57) 
     useEffect(() => {
         fetch(url)
         .then(response => response.json())
