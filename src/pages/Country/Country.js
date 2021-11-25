@@ -3,31 +3,35 @@ import Button from '../../components/Button/Button';
 import { useState, useEffect } from 'react';
 import {FaArrowLeft} from 'react-icons/fa'
 import Cards from '../../components/Cards/Cards';
-import Card from '../../components/Card/Card';    
+import Card from '../../components/Card/Card';  
+import Loader from '../../components/Loader/Loader'  
 
 function Country() {
     let a = window.location.href
     const [countrys, setCountrys] = useState([])
     const [all, setAll] = useState([])
+    const [loading, setLoading] = useState(false)
 
-    let url = 'https://restcountries.com/v2/name/' + a.substr(57) 
+    let url = 'https://restcountries.com/v2/name/' + a.substr(57) /* antes 57 */
     useEffect(() => {
         fetch(url)
         .then(response => response.json())
-        .then((data) => (setCountrys(data)));
+        .then((data) => {
+            setCountrys(data)
+            setLoading(true)
+        });
     }, [url])
 
     useEffect(() => {
         fetch('https://restcountries.com/v2/all' )
         .then(response => response.json())
-        .then((data) => (setAll(data)));
+        .then((data) => {
+            setAll(data)
+        });
     }, [])
-
+console.log(countrys)
     let randon = Math.floor(Math.random() * 200) 
     
-    console.log(countrys[0])
-    console.log(countrys)
-
   return(
     
     <div className={style.container}>
@@ -38,8 +42,8 @@ function Country() {
                 to='/'
             ></Button>
 
-            {countrys.length === 0 ? '' : <><div className={style.img_container}>
-                    <img src={countrys[0].flag} alt="" />
+            {countrys.length === 0? '': <><div className={style.img_container}>
+                    <img src={countrys[0].flag} alt={countrys[0].name} />
                 </div>
                 <div className={style.text_container}>
                     <h2>
@@ -115,9 +119,10 @@ function Country() {
                         </div>
                     </div>
                 </div></>}
-        </div>
+        </div>     
+        {!loading && <Loader/>}
         <Cards>
-            {all.length === 0 ? '' : 
+            {all.length > 0 && 
             <> <Card countrys={all[randon]}></Card> 
             
             <Card countrys={all[randon + 1]}></Card> 
