@@ -1,5 +1,7 @@
 .card{
     max-width: 270px;
+    min-height: 320px;
+    max-height: 330px;
     background-color: var(--white);
     border-radius: 5px;
 }
@@ -17,8 +19,7 @@
 }
 .card .text{
     width: 100%;
-    padding: 0 2rem;
-    padding-top: 2rem;
+    padding: 2rem;
 }
 .card .text h2{
     font-size: 1.8rem;
