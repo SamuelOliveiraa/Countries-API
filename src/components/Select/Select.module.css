@@ -1,4 +1,5 @@
 .container{
+    width: 200px;
     position: relative;
     color: var(--very-dark-blue);
 }
@@ -16,6 +17,9 @@
 .select svg{
     font-size: 1.4rem;
     transition: .2s ease-in-out;
+}
+.select h2{
+    font-size: 1.3rem;
 }
 .options{
     width: 100%;

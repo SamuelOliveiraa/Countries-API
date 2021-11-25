@@ -1,5 +1,5 @@
 .card{
-    max-width: 300px;
+    max-width: 270px;
     background-color: var(--white);
     border-radius: 5px;
 }
@@ -29,10 +29,9 @@
     color: var( --very-dark-blue);
     margin: 0.7rem 0;
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 900;
 }
 .card .text p span{
-    color: var(--dark-gray);
     margin-left: 0.4rem;  
     font-weight: 300;  
 }

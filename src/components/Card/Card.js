@@ -7,7 +7,7 @@ function Card({countrys}) {
   return(
     <Link to={url} className={style.card}>
         <div className={style.img_container}>
-            <img src={countrys.flags.svg} alt="" />
+            <img src={countrys.flags.png} alt="" />
         </div>
         <div className={style.text}>
             <h2>

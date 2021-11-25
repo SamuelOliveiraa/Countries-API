@@ -3,8 +3,8 @@
     margin: 0 auto;
     margin-top: 4rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 301px));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 271px));
+    gap: 8rem 6rem;
     justify-content: center;
 }
 .cards > p{

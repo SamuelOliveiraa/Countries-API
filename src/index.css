@@ -19,14 +19,11 @@ html{
 
     overflow-x: hidden;
 
-  /*   --dark-blue: hsl(209, 23%, 22%); (Dark Mode Elements)  
-    --very-dark-blue: hsl(207, 26%, 17%);(Dark Mode Background) */
-
-    --white: hsl(0, 0%, 100%); /* (Dark Mode Text & Light Mode Elements); */
+    --white: hsl(0, 0%, 100%); 
     
-    --very-dark-blue : hsl(200, 15%, 8%); /* (Light Mode Text) */
-    --dark-gray: hsl(0, 0%, 52%);  /* (Light Mode Input) */
-    --very-light-gray: hsl(0, 0%, 98%);  /* (Light Mode Background) */
+    --very-dark-blue : hsl(200, 15%, 8%);
+    --dark-gray: hsl(0, 0%, 52%);  
+    --very-light-gray: hsl(0, 0%, 98%);
 
     width: 100vw;
     height: 100vh;
@@ -44,4 +41,30 @@ html.dark{
     --dark-gray: hsl(0, 0%, 52%); 
     --very-light-gray: hsl(207, 26%, 17%);  
     --white: hsl(209, 23%, 22%);
+}
+/* SCROLLBAR WIDTH */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+}
+.wrapper::-webkit-scrollbar {
+    width: 20px;
+    height: 8px;
+}
+  
+/* SCROLLBAR TRACK */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--very-light-gray); 
+    border-radius: 5px;
+}
+  
+  /* SCROLLBAR HANDLE */
+::-webkit-scrollbar-thumb {
+    background: var(--dark-gray); 
+    border-radius: 5px;
+}
+  
+  /* SCROLLBAR HANDLE ON HOVER */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-gray); 
 }
