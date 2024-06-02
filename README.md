@@ -3,7 +3,7 @@
 ![Design preview for Countries API ](./src/image/desktop-preview.jpg)
 
 ## WELCOME! 👋         
-  
+   
 This is a challenge proposed by the website **[Frontend Mentor](https://www.frontendmentor.io)** and this site is great because it helps us improve our **coding skills** with real projects and more varied difficulties. The site gives us the possibility to train any skill or web technology that we want, be it media-querie, grid layout, Jquery, React, etc..
 
 ## The Challenge 🎯
